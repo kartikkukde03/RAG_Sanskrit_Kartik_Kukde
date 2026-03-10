@@ -1,0 +1,109 @@
+{
+    "individual_results": [
+        {
+            "question": "घण्टा वने कथम् अपतत् ?",
+            "ground_truth": "चोरः व्याघ्रेण हतः तदा घण्टा वने अपतत्",
+            "model_answer": "व्याघ्रेण हतः चोरः, तदा घण्टा वने अपतत् ।",
+            "judgment": {
+                "correctness": 1,
+                "grounded": 1,
+                "hallucination": "No"
+            }
+        },
+        {
+            "question": "चोरः कथं मृतः ?",
+            "ground_truth": "चोरः व्याघ्रेण हतः",
+            "model_answer": "व्याघ्रेण हतः ।",
+            "judgment": {
+                "correctness": 1,
+                "grounded": 1,
+                "hallucination": "No"
+            }
+        },
+        {
+            "question": "वानराः किं अकुर्वन् ?",
+            "ground_truth": "वानराः घण्टां हस्ते धृत्वा अधुन्वन्",
+            "model_answer": "वानराः घण्टां हस्ते धृत्वा अधुन्वन् । अकस्मादेव घण्टानादः अजायत् ।",
+            "judgment": {
+                "correctness": 1,
+                "grounded": 1,
+                "hallucination": "No"
+            }
+        },
+        {
+            "question": "घण्टानादः कथम् अजायत् ?",
+            "ground_truth": "वानरैः घण्टा अधुन्यमाना घण्टानादः अजायत्",
+            "model_answer": "अकस्मादेव घण्टानादः अजायत् । वानराः घण्टां हस्ते धृत्वा अधुन्वन् इति ।",
+            "judgment": {
+                "correctness": 1,
+                "grounded": 1,
+                "hallucination": "No"
+            }
+        },
+        {
+            "question": "जनाः किं अशङ्कन्त ?",
+            "ground_truth": "जनाः अशङ्कन्त यत् शिखरप्रदेशे घण्टाकर्णः नाम राक्षसः वर्तते",
+            "model_answer": "जनाः मूर्खभृत्यस्य संसर्गात् सर्वम् कार्यम् विनश्यति इति अशङ्कन्ते । न ज्ञायते किम् ते अशङ्कन्ते ।",
+            "judgment": {
+                "correctness": 0,
+                "grounded": 0,
+                "hallucination": "Yes"
+            }
+        },
+        {
+            "question": "राजा किम् अघोषयत् ?",
+            "ground_truth": "यः घण्टाकर्णं नाशयेत् तस्मै राजा सुवर्णं दास्यति इति अघोषयत्",
+            "model_answer": "राजा कालीदासं दरबारे अकथयत् एषः पण्डितः आगमिष्यति इति ।",
+            "judgment": {
+                "correctness": 0,
+                "grounded": 0,
+                "hallucination": "Yes"
+            }
+        },
+        {
+            "question": "घण्टाकर्णः कुत्र वसति स्म ?",
+            "ground_truth": "घण्टाकर्णः पर्वतस्य शिखरप्रदेशे वसति स्म",
+            "model_answer": "घण्टाकर्णः पर्वतस्य शिखरप्रदेशे वसति स्म । न ज्ञायते कुत्र वसति स्म ।",
+            "judgment": {
+                "correctness": 1,
+                "grounded": 1,
+                "hallucination": "No"
+            }
+        },
+        {
+            "question": "कः घण्टाकर्णस्य रहस्यं ज्ञातवान् ?",
+            "ground_truth": "एका वृद्धा स्त्री घण्टाकर्णस्य रहस्यं ज्ञातवती",
+            "model_answer": "वृद्धा घण्टाकर्णस्य रहस्यं ज्ञातवान् । वृद्धा घण्टामादाय नृपं प्रत्यागच्छत् । नृपः तां वृद्धां चार्तुयम् आसीत् ।",
+            "judgment": {
+                "correctness": 0,
+                "grounded": 0,
+                "hallucination": "Yes"
+            }
+        },
+        {
+            "question": "वृद्धा स्त्री किं दृष्टवती ?",
+            "ground_truth": "सा दृष्टवती यत् वानराः घण्टां अधुन्वन्ति",
+            "model_answer": "वृद्धा स्त्री वानरान् घण्टां वादयन्ति इति दृष्टवती ।",
+            "judgment": {
+                "correctness": 0,
+                "grounded": 1,
+                "hallucination": "No"
+            }
+        },
+        {
+            "question": "वृद्धा स्त्री राजानं किम् अवदत् ?",
+            "ground_truth": "वृद्धा स्त्री राजानं अवदत् यत् घण्टाकर्णः नास्ति केवलं वानराः घण्टां वादयन्ति",
+            "model_answer": "वृद्धा स्त्री राजानं वदति \"यः घण्टकर्णं नाशयेत्, तस्मै विपुलं सुवर्णं यच्छेयम् अहम्\" इति श्रुत्वा सा वनं गता ।",
+            "judgment": {
+                "correctness": 0,
+                "grounded": 0,
+                "hallucination": "Yes"
+            }
+        }
+    ],
+    "overall_metrics": {
+        "correctness_accuracy": 0.7,
+        "grounded_rate": 0.6,
+        "hallucination_rate": 0.3
+    }
+}

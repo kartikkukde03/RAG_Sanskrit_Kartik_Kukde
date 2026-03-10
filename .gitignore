@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Vector databases (large files, rebuildable)
+rag_core/faiss_index/
+rag_core/bm25_docs.pkl
+
+# Virtual env
+rag_env/
+venv/
+
+# Cache
+__pycache__/
+*.pyc

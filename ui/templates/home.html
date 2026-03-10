@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanskrit RAG Assistant</title>
+    <link rel="stylesheet" href="/static/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Sanskrit RAG Assistant</h1>
+            <p>Explore stories through chat</p>
+        </header>
+
+        <div class="chat-container">
+            <div id="messages" class="messages">
+                <!-- chat messages will be appended here -->
+            </div>
+            <div class="chat-box">
+                <textarea id="question" placeholder="Type your Sanskrit question here..."></textarea>
+                <button id="sendBtn" onclick="askQuestion()">Send</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+function appendMessage(text, sender) {
+    const messagesDiv = document.getElementById('messages');
+    const bubble = document.createElement('div');
+    bubble.classList.add('message', sender === 'user' ? 'user-msg' : 'bot-msg');
+    bubble.innerText = text;
+    messagesDiv.appendChild(bubble);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+async function askQuestion() {
+    const questionEl = document.getElementById("question");
+    const question = questionEl.value.trim();
+    if (!question) return;
+
+    appendMessage(question, 'user');
+    questionEl.value = '';
+
+    appendMessage('⏳ Thinking...', 'bot');
+
+    const response = await fetch("/ask", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ question: question })
+    });
+
+    const data = await response.json();
+    // replace last bot message
+    const botBubbles = document.querySelectorAll('.bot-msg');
+    const lastBot = botBubbles[botBubbles.length - 1];
+    if (lastBot) lastBot.innerText = data.answer;
+
+    // timing removed; no updates required
+}
+</script>
+</body>
+</html>
