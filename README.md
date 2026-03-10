@@ -18,6 +18,7 @@ An **Intelligent Retrieval-Augmented Generation (RAG)** system that answers ques
 ## 🏗️ How It Works
 
 ### **Architecture Overview**
+## 🚀 System Overview ---<img width="1233" height="350" alt="indexing(part2)" src="https://github.com/kartikkukde03/RAG_Sanskrit_Kartik_Kukde/blob/main/architecture.png" />
 
 The system consists of two main phases:
 
@@ -222,6 +223,7 @@ uvicorn api.main:app --reload --port 8000
 INFO:     Uvicorn running on http://127.0.0.1:8000
 INFO:     Application startup complete
 ```
+
 
 ### **Access the Chatbot**
 
