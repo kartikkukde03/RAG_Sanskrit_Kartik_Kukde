@@ -220,6 +220,7 @@ uvicorn api.main:app --reload --port 8000
 ```
 
 **Output:**
+<img width="889" height="552" alt="Screenshot 2026-01-30 at 1 29 50 PM" src="https://github.com/kartikkukde03/RAG_Sanskrit_Kartik_Kukde/blob/main/output.PNG" />
 ```
 INFO:     Uvicorn running on http://127.0.0.1:8000
 INFO:     Application startup complete
