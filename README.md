@@ -19,7 +19,7 @@ An **Intelligent Retrieval-Augmented Generation (RAG)** system that answers ques
 
 ### **Architecture Overview**
 ## 🚀 System Overview ---<img width="1233" height="350" alt="indexing(part2)" src="https://github.com/kartikkukde03/RAG_Sanskrit_Kartik_Kukde/blob/main/architecture.png" />
-<img width="981" height="1242" alt="rag_pipeline(2)" src="https://github.com/user-attachments/assets/84cf8223-1b1b-4bf3-9665-712a5c71d5ff" />
+
 
 The system consists of two main phases:
 
